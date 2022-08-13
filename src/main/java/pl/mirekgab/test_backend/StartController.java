@@ -8,7 +8,7 @@ public class StartController {
 
     @GetMapping("/")
     public String hello() {
-        return "hello";
+        return "hello world";
     }
 
     @GetMapping("/mytext")
