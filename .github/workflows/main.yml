@@ -2,8 +2,11 @@ name: Publish Docker image
 
 on:
   workflow_dispatch:
-  release:
-    types: [published]
+  push:
+    branches:
+      - 'master'
+    tags:
+      - 'v*'
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
