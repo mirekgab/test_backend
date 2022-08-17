@@ -1,6 +1,6 @@
-name: Run tests
+name: codecov
 
-on: [ workflow_dispatch]
+on: [ push, workflow_dispatch]
 
 jobs:
   run_tests:
