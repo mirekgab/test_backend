@@ -1,6 +1,6 @@
 name: Run tests
 
-on: [ push, workflow_dispatch]
+on: [ workflow_dispatch]
 
 jobs:
   run_tests:
@@ -18,7 +18,7 @@ jobs:
           cache: maven
 
       - name: Run tests with Maven
-        run: mvn -B test -Dspring.profiles.active=test --file pom.xml
+        run: mvn -B test --file pom.xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
