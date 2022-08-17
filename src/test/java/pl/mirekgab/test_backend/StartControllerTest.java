@@ -24,7 +24,7 @@ class StartControllerTest {
         mvc.perform(MockMvcRequestBuilders.get("/")
                 .accept(MediaType.ALL))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("hello world from version 0.2.0")));
+                .andExpect(content().string(equalTo("hello world from version 0.3.0")));
     }
 
     @Test
