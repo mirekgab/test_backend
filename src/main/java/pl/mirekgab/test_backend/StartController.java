@@ -15,4 +15,9 @@ public class StartController {
     public String mytext() {
         return "this is my text";
     }
+
+    @GetMapping("/hello")
+    public String hello1() {
+        return "hello1";
+    }
 }
