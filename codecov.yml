@@ -1,0 +1,2 @@
+ignore:
+  - "pl.mirekgab.test_backend.TestBackendApplication.java"
