@@ -1,2 +1,2 @@
 ignore:
-  - "src/main/java/pl/mirekgab/test_backend/TestBackendApplication.java"
+  - "src/main/java/pl/mirekgab/test_backend/TestBackendApplication"
