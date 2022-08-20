@@ -33,4 +33,11 @@ class StartControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("this is my text")));
     }
+
+    @Test
+    void hello1() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.ALL))
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("hello1")));
+    }
 }
