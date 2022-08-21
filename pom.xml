@@ -54,6 +54,7 @@
 						<exclude>**/test_backend/pack1/**</exclude>
 						<exclude>pl/mirekgab/test_backend/TestBackendApplication.class</exclude>
 					</excludes>
+					<formats>HTML,XML</formats>
 				</configuration>
 				<executions>
 					<execution>
