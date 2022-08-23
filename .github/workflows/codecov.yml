@@ -1,6 +1,6 @@
 name: codecov
 
-on: [ push, workflow_dispatch]
+on: [ workflow_dispatch]
 
 jobs:
   run_tests:
@@ -24,4 +24,4 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          
+          files: ./target/site/jacoco/jacoco.xml
